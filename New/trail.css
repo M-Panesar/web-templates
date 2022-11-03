@@ -1,0 +1,36 @@
+.hydrated {
+    visibility: inherit;
+}
+html {
+    display: block;
+}
+.marketplace-container .catalogue {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+}
+::-webkit-scrollbar {
+    background: rgb(1, 60, 48);
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(1, 60, 48);
+}
+::-webkit-scrollbar-button {
+    background: rgb(3, 166, 117);
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(3, 166, 117);
+}
