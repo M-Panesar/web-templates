@@ -3,6 +3,20 @@
     padding: 0;    
 }
 
+
+body::-webkit-scrollbar{
+    background: linear-gradient(to left, #684bc0ba, #684bc08f);
+}
+
+body::-webkit-scrollbar-thumb {
+    background:#5938bd76;
+    border-radius: 2px;
+}
+
+body::-webkit-scrollbar-button {
+    display: hidden;
+}
+
 h1{
     color: white;
 }
@@ -22,11 +36,12 @@ body{
 #header{
     display: flex;
     flex-wrap: wrap;
-    background: url("https://randompicturegenerator.com/img/people-generator/gab5efb99b1f5b1ac18f8f302c793aaa28f5e881eb21d8ae4f7f64f55d3d800a5c77426e67b2e74c5e8d7c1787c13369f_640.jpg"), linear-gradient(to left, #b197fc,#d0bfff);
+    background: linear-gradient(to left, #684bc076, #684bc061), url("https://randompicturegenerator.com/img/people-generator/gab5efb99b1f5b1ac18f8f302c793aaa28f5e881eb21d8ae4f7f64f55d3d800a5c77426e67b2e74c5e8d7c1787c13369f_640.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     box-shadow: #684bc099;
+    height: 80vh;
 }
 
 .content h1{
@@ -315,7 +330,7 @@ body{
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 65vh;
+    height: 60vh;
     border-radius: 35px;
     color: #fff;
     cursor: pointer;
