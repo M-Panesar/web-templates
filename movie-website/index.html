@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
-    <title>Header</title>
+    <title>Header Page</title>
   </head>
   <body>
     <section>
@@ -30,7 +32,7 @@
               </button>
 
               <img src="Images/Logo.png" alt="Logo" class="logo">
-              <ul class="list">
+              <ul id="nav-bar-links" class="list">
                 <li><a href="#">Movies</a></li>
                 <li><a href="#">Series</a></li>
                 <br>
@@ -140,30 +142,63 @@
     </section>
 
 
-    <footer>
-      <p1>
-          <bold>@BBMovies</bold>
-      </p1>
-      <br>
-      <br>
-          <div class="row">
-            <i id="footer-icon" class="fas fa-laptop"></i>
-            <i id="footer-icon" class="fas fa-book"></i>
-            <i id="footer-icon" class="fas fa-phone"></i>
-            <i id="footer-icon" class="fas fa-mouse"></i>
+   <footer>
+   <section>
+    <div class="footer">
+      <div class="footer-column">
+        <div class="footer-column-1">
+          <h3 class="footer-column-heading">Paths:</h3>
+          <ul>
+            <li><a href="#" class="footer-links">Home</a></li>
+            <li><a href="#" class="footer-links">Movies</a></li>
+            <li><a href="#" class="footer-links">Subscription</a></li>
+            <li><a href="#" class="footer-links">About-us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column-2">
+          <h3 class="footer-column-heading">Logics:</h3>
+          <ul>
+            <li><a href="#" class="footer-links">Home</a></li>
+            <li><a href="#" class="footer-links">Movies</a></li>
+            <li><a href="#" class="footer-links">Subscription</a></li>
+            <li><a href="#" class="footer-links">About-us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column-3">
+          <h3 class="footer-column-heading">Devices:</h3>
+          <ul>
+            <li><a href="#" class="footer-links">Home</a></li>
+            <li><a href="#" class="footer-links">Movies</a></li>
+            <li><a href="#" class="footer-links">Subscription</a></li>
+            <li><a href="#" class="footer-links">About-us</a></li>
+          </ul>
+        </div>
+        <div class="subscription">
+          <div class="footer-subscribe">          
+            <form>
+                <p class="input-button-heading">Subscribe with your email id:</p>
+                
+                <div class="footer-input-button-div">
+                <input class="footer-input" type="text" placeholder="Enter your email" required name="Email">
+
+                <button class="footer-button" type="submit">
+                    <i class="plane"></i> Subscribe
+                </button>
+              </div>
+            </form>
+          </div><br><br>
+          <p class="input-button-heading"> Follow us:<br>
+          <div class="footer-icons">    
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-linkedin"></ion-icon>
           </div>
-          <br>
-          
-          <div>          
-              <form>
-                  <p><input class="input-section" type="text" placeholder="Enter your email" required name="Email"></p>
-                  <br>
-                  <button class="button-section" type="submit">
-                      <i class="plane"></i> Subscribe
-                  </button>
-              </form>
-          </div>    
-    </footer> 
+        </div>
+
+      </div>
+    </div>  
+
 
     <script src="script.js"></script>
   </body>
