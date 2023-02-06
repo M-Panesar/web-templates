@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    font-size: .9rem;
+}
+
+.container p{
+    
+    line-height: 42px;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to left, #00032bcb,#000537c3),url("Images/bg.jpeg");
+    background-position:center;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    width: 37vw;
+    padding:2px 32px 2px 32px;
+
+}
+.image h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.icons-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+.info p{
+    text-align: center;
+    padding-bottom: 23px;
+}
+
+.icons-text-info{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons-div{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -5px;
+    flex-direction: column;
+}
+
+.text-div{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+}
+
+.text-div p{
+    margin-top: 30px;
+}
+
+.icons-div ion-icon{
+    font-size: 1.4rem;
+}
+
+.info p{
+    margin-top: 2px;
+    margin-left: 20px;
+    font-size: .9rem;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 56px;
+}
+.input{
+    padding:4px 306px 24px 6px;
+    margin-bottom: 4px;
+}
+.input-extra{
+    padding:4px 306px 134px 6px;
+    margin-bottom: 4px;
+}
+.button{
+    height: 4.3vh;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    justify-content: center;
+    margin-left: 208px;
+    margin-top: 7px;
+    border-radius: 12px;
+    color: #fff;
+    background-color: #373b69;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #22254b;
+    color: #fff;
+}
+
+/* .Address-info{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 30px;
+}
+.Address-info h3{
+    padding-left: 18px;
+    text-align: center;
+} */
