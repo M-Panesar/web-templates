@@ -35,7 +35,7 @@
     justify-content: space-evenly;
 }
 
-.membership-container .bottom .membership-box{
+.membership-box{
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -46,10 +46,13 @@
 }
 
 .membership-box:hover{
-    transform: scale(1.02);
+    transform: scale(1.1);
+    background-color: #22254b;
+    color:white;
     transition: .2s;
     cursor: pointer;
 }
+
     
 .membership-plan-button-container{
     display: flex;
@@ -65,13 +68,13 @@
     padding:5px 12px 4px 12px;
     border: 2px solid #373b69;
     border-radius: 5px;
-    color:#22254b;
-    background:white;
+    background:#22254b;
+    color:white;
 }
 
 .membership-plan-button-container a:hover{
-    background:#22254b;
-    color:white;
+    color:#22254b;
+    background:white;
     transition:.1s ;
     transform: scale(1.05);
 }
