@@ -1,70 +1,30 @@
-var email = document.forms['form']['email'];
-var name = document.forms['form']['name'];
-var password = document.forms['form']['password'];
-var correct_password = document.forms['form']['coorect_password'];
 
-var email_error = document.getElementById('email_error');
-var name_error = document.getElementById('name_error');
-var password_error = document.getElementById('password_error');
-var correct_password_error = document.getElementById('correct_password_error');
+var email = document.getElementById('email');
+var username = document.getElementById('name');
+var password = document.getElementById('password');
+var reTypePassword = document.getElementById('re-type-password');
 
-email.addEventListener('textInput', email_Verify);
-name.addEventListener('textInput', name_Verify);
-password.addEventListener('textInput', password_Verify);
-correct_password.addEventListener('textInput', correct_password_Verify);
+var errorMessage =  document.querySelector(".error-message")
+var button =  document.querySelector(".button")
 
-function validated(){
-    if(email.value.length < 9){
-        email.style.border = "1px solid #22254b";
-        email_error.style.display = "block";
-        email.focus();
-        return false; 
-    }
-    if(name.value.length < 23){
-        name.style.border = "1px solid #22254b";
-        name_error.style.display = "block";
-        name.focus();
-        return false; 
-    }
-    if(password.value.length < 6){
-        password.style.border = "1px solid #22254b";
-        password_error.style.display = "block";
-        password.focus();
-        return false; 
-    }
-    if(correct_password.value.length < 6){
-        correct_password.style.border = "1px solid #22254b";
-        correct_password_error.style.display = "block";
-        correct_password.focus();
-        return false; 
-    }
-}
+button.addEventListener("click",password_Verify)
 
-function email_Verify(){
-    if(email.value.length >= 8){
-        email.style.border = "1px solid silver";
-        email_error.style.display = "none";
-        return true;
-    }
-}
-function name_Verify(){
-    if(name.value.length >= 22){
-        name.style.border = "1px solid silver";
-        name_error.style.display = "none";
-        return true;
-    }
-}
 function password_Verify(){
-    if(password.value.length >= 5){
-        password.style.border = "1px solid silver";
-        password_error.style.display = "none";
-        return true;
-    }
-}
-function correct_password_Verify(){
-    if(correct_password.value.length >= 5){
-        correct_password.style.border = "1px solid silver";
-        correct_password_error.style.display = "none";
-        return true;
+    if(email.value === ""){
+        errorMessage.innerHTML = "Email Not Filled"
+        errorMessage.style.color = "red"
+    }else if(username.value === ""){
+        errorMessage.innerHTML = "Name Not Filled"
+        errorMessage.style.color = "red"
+    }else if(password.value < 5 || password.value > 30){
+        errorMessage.innerHTML = "Password Should be between 5 and 30"
+        errorMessage.style.color = "red"
+    }else if(password.value !== reTypePassword.value){
+        errorMessage.innerHTML = "Password Not Matched"
+        errorMessage.style.color = "red"
+    }else{
+        errorMessage.innerHTML = "Signed Up"
+        errorMessage.style.color = "green"
+        
     }
 }

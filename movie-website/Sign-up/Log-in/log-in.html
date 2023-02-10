@@ -9,38 +9,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Sign-up!! </title>
+    <title> Log-in!! </title>
     <script src="https://kit.fontawesome.com/5dfee1112a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="sign-up.css">
+    <link rel="stylesheet" href="log-in.css">
 </head>
 <body>
     <div class="container">
-        <div class="sign-up">
+        <div class="log-in">
             <div class="image">
-                <h2>Sign-up</h2>
+                <h2>Log-in</h2>
             </div>
         <div class="inputs">
-            <h4>Sign-up here:</h4>
-          <form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+            <h4>Log-in here:</h4>
+          <form class="login_form" method="post" name="form" onsubmit="return validated()">
             
             <input class="input-1" id="email" type="text" placeholder="Enter your Email" name="email"> <!--required name**-->
-            <input class="input-2" id="name" type="text" placeholder="Enter your Name" name="name">
             <input class="input-3" id="password" type="password" placeholder="Enter your Password" name="password">
-            <input class="input-4" id="re-type-password" type="password" placeholder="Re-enter your password" name="correct_password">
         
             <div class="error-message"></div>
 
 
           </form>
           <button class="button" >
-            <i class="plane"></i> Sign-up
+            <i class="plane"></i> Log-in
         </button>
-  <p>Already have an account then, <a href="Log-in/log-in.html" class="login">Login.</a></p>
         </div>
             </ul>
         </div>
         
     </div>
-    <script src="sign-up.js"></script>
+    <script src="log-in.js"></script>
 </body>
 </html>

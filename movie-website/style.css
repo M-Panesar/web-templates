@@ -26,6 +26,9 @@ body {
 
 #nav-bar-links{
   color: black;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 .side-name{
@@ -493,4 +496,61 @@ body {
   text-align: center;
   cursor: pointer;
   color: #fff;
+}
+
+@media (max-width: 576px){
+  .body{
+    overflow-x: hidden;
+  }
+  .top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    overflow-x: hidden;
+  }
+  .open-btn{
+    margin: 8px 0px 0px 9px; 
+  }
+  
+  .logo{
+    width: 35px;
+    margin-top: 12px;
+    margin-right: 12px;
+  }
+  .links{
+    display: none;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .container h1{
+    font-size: 40px;
+  }
+  .container p{
+    font-size: 19px;
+    word-spacing: .25px;
+  }
+  .list p{
+    font-size: 13px;
+  }
+  .side-name{
+    display: none;
+  }
+  .testimonial{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1680px;
+    margin-left: 0;
+    padding: 0;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
