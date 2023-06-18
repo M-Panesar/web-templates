@@ -1,0 +1,19 @@
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 20vw;
+}
+
+.icon-image img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 65px;
+    margin: 12px;
+}
+
+.block p{
+    color: grey;
+    margin-top: 12px;
+}

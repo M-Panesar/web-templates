@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* overflow-y: hidden; */
+}
+  
+.Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 90vh;
+    /* background: url("girl.jpg"), linear-gradient(to top, rgb(255, 204, 0), rgb(255, 157, 0)); */
+    background: linear-gradient(to top, rgb(255, 204, 0), rgb(255, 157, 0));
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Cedarville Cursive', cursive;
+    margin-left: -150px;
+}
+  
+.image{
+    height: 90vh;
+    width: 40vw;
+}
+  
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.heading h1{
+    font-size: 70px;
+}
+  
+.heading p{
+    font-size: 27px;
+}
+  
+.heading .links, .about-us{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px;
+}
+  
+.heading .links ul{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    text-decoration: none;
+    /* justify-content: space-between; */
+}
+  
+.heading a:hover{
+    text-decoration: underline;
+}
+
+.heading a{
+    text-decoration: none;
+    color: black;
+}
+  
+.button{
+    font-size: 1.15rem;
+    background-color: rgb(255,157,0);
+    border: none;
+    border-radius: 12px;
+    padding: 15px 60px 15px 60px;
+    width: fit-content;
+    margin-top: 20px;
+    box-shadow: black 10px;
+    cursor: pointer;
+}

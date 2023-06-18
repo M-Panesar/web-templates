@@ -1,0 +1,37 @@
+.container{
+    background: url("sign-in.jpg"), linear-gradient(to top, rgba(255, 204, 0, 0.486), rgba(255, 157, 0, 0.479));
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 42vh;
+    width: 93vw;
+    border-radius: 35px;
+    margin: 60px;
+}
+
+.container h1{
+    padding: 12px;
+    color: rgb(255, 255, 255);
+    box-shadow: silver 10px;
+}
+
+.container input{
+    padding: 9px 315px 9px 12px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    border: none;
+}
+
+.btn{
+    background-color:  rgb(255,157,0);
+    color: #fff;
+    border-radius: 32px;
+    padding: 7.8px 17.5px 7.7px 17.5px;
+    margin-left: -91px;
+    border: none;
+    cursor: pointer;
+}

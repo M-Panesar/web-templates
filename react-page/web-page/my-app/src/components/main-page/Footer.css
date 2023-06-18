@@ -1,0 +1,43 @@
+.Footer{
+    display: flex;
+    flex-direction: row;
+    padding: 23px;
+}
+
+.Footer-icon-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 23px;
+    padding: 12px;
+    width: 24vw;
+}
+
+.icon{
+    margin-left: 81px;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 35px;
+    box-shadow: silver 1px 1px 1px 1px;
+    text-align: center;
+}
+
+.Footer-icon-div h4{
+    padding: 29px;
+}
+
+.Footer .links{
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    margin: 45px 0px 0px 72px;
+}
+
+.Footer .links a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: grey;
+    padding-top: 25px;
+    /* gap: 120px; */
+}
