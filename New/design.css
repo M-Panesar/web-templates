@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(81, 186, 155);
+}
+
+.disclaimer{
+    background-color: rgba(122, 197, 238, 0.916);
+    width: auto;
+    height: auto;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-top: -12px;
+    box-shadow: rgba(122, 197, 238, 0.916);
+}
+.first-div{
+    display: flex;
+    margin: 0;
+    flex-direction: row;  
+    justify-content: center;
+    border-style: solid;
+    border-color: black;
+    font-family: monospace;
+    font-size: 18.5px;
+}

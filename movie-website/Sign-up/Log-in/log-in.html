@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Log-in!! </title>
+    <script src="https://kit.fontawesome.com/5dfee1112a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="log-in.css">
+</head>
+<body>
+    <div class="container">
+        <div class="log-in">
+            <div class="image">
+                <h2>Log-in</h2>
+            </div>
+        <div class="inputs">
+            <h4>Log-in here:</h4>
+          <form class="login_form" method="post" name="form" onsubmit="return validated()">
+            
+            <input class="input-1" id="email" type="text" placeholder="Enter your Email" name="email"> <!--required name**-->
+            <input class="input-3" id="password" type="password" placeholder="Enter your Password" name="password">
+        
+            <div class="error-message"></div>
+
+
+          </form>
+          <button class="button" >
+            <i class="plane"></i> Log-in
+        </button>
+        </div>
+            </ul>
+        </div>
+        
+    </div>
+    <script src="log-in.js"></script>
+</body>
+</html>
