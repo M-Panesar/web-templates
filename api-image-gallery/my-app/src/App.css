@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Great+Vibes&family=Montserrat&family=Parisienne&family=Playfair+Display:wght@700&family=Poppins:wght@300;400&family=Roboto&family=Satisfy&display=swap');
+
+:root{
+  --primary-color: #fff;
+  --secondary-color: #000;
+}
+
+[toggle-theme = "dark"]{
+  --primary-color: rgb(64, 64, 64);
+  --secondary-color: #fff;
+} 
+
+body{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.Navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 8px;
+}
+
+.logo h1{
+  font-family: 'Satisfy', cursive;
+}
+
+/* .SearchBar svg{
+  margin-right: -12px;
+} */
+
+.SearchBar input{
+    border-radius: 12px; 
+    background-color: rgb(236, 236, 236);
+    border: 0;
+    font-size: 0.85rem;
+    padding: 4px 15px 4px 12px;
+    height: 50px;
+    width: 30rem;
+    margin-top: 22px;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+  gap: 37px;
+  margin-top: 13.5px;
+  margin-left: -62px;
+}
+
+.toggleButton{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 13.5px;
+}
+
+.checkbox input{
+  height: 18px;
+  width: 18px;
+  margin-top: 25px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.checkbox input:hover{
+  height: 18px;
+  width: 18px;
+  margin-top: 25px;
+  border-bottom: 3px solid currentColor;
+  opacity: 1;
+}
+
+.checkbox input:focus{
+  height: 18px;
+  width: 18px;
+  margin-top: 25px;
+  border-radius: 200px;
+  border-bottom: 3px solid currentColor;
+  opacity: 1;
+}
+
+.Header{
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to left, rgba(0, 72, 0, 0.218), rgba(6, 55, 6, 0.399)), url("components/images/mountain.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 56vh;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 54px;
+}
+
+.Header input{
+  border-radius: 12px; 
+  background-color: rgb(236, 236, 236);
+  border: 0;
+  font-size: 0.85rem;
+  padding: 4px 15px 4px 12px;
+  height: 50px;
+  width: 45rem;
+}
+
+.gallery-image{
+  height: auto;
+  width: 20rem;
+  position: relative;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.ApiSubContainer #profile{
+  border-radius: 50px;
+  height: 60px;
+  width: 60px;
+  margin-top: 33px;
+}
+
+.profile-div{
+  display: flex;
+  flex-direction: row;
+  width: 19.9rem;
+  justify-content: space-around;
+  gap: 3rem;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border: rgba(0, 0, 0, 0.173) 1px solid;
+  box-shadow: 0px 0px 2px 0px;
+  margin-top: -20px;
+}
+
+.ApiMainContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ }
+
+.ApiSubContainer{
+  width: 70%;
+  padding: 12px 2px 2px 2px;
+  columns:3 250px;
+}
+
+.main-image-div{
+  margin-top: 20px;
+}
+
+.name-div{
+  margin-left: -90px;
+  margin-top: 8px;
+}
+
+.name-div p{
+  margin-top: -30px;
+  color: rgba(128, 128, 128, 0.715);
+}
+
+.profile-div #likes{
+  margin-top: 45px;
+}
